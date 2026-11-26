@@ -1,379 +1,347 @@
-# [NOMBRE DEL PROYECTO]
+# Portafolio personal | React + Vite
 
-**Proyecto final — Desarrollo de aplicaciones asistido con inteligencia artificial**  
-**Institución:** Institución Universitaria Antonio José Camacho  
-**Asignatura / grupo:** 711
-**Integrantes:** Juan Guillermo Sanchez y Samuel Beltran Davila  
-**Docente:** Pablo Julian Salamanca
+Aplicación web académica para presentar un perfil profesional, consultar proyectos, conocer habilidades y establecer contacto mediante un formulario y un asistente conversacional.
 
-> **Estado de esta documentación:** plantilla elaborada a partir de los dos documentos de clase. **Antes de la entrega, reemplazar los campos entre corchetes y verificar en el código cada funcionalidad descrita.** No presentar como implementados requisitos que aún no funcionan.
+**Institución Universitaria Antonio José Camacho · Tecnología en Sistemas de Información · Desarrollo de Apps asistido con IA · Grupo 711**
 
-## Tabla de contenido
+**Autores:** Juan Guillermo Sánchez y Samuel Beltrán Dávila.
 
-1. [Descripción del proyecto](#1-descripción-del-proyecto)
-2. [Objetivos y alcance](#2-objetivos-y-alcance)
-3. [Tecnologías y herramientas utilizadas](#3-tecnologías-y-herramientas-utilizadas)
-4. [Arquitectura y organización del código](#4-arquitectura-y-organización-del-código)
-5. [Módulos y funcionalidades](#5-módulos-y-funcionalidades)
-6. [Gestión de estado, eventos y asincronía](#6-gestión-de-estado-eventos-y-asincronía)
-7. [Integración con inteligencia artificial](#7-integración-con-inteligencia-artificial)
-8. [Requisitos previos e instalación](#8-requisitos-previos-e-instalación)
-9. [Configuración y ejecución](#9-configuración-y-ejecución)
-10. [Guía de uso](#10-guía-de-uso)
-11. [Validaciones y manejo de errores](#11-validaciones-y-manejo-de-errores)
-12. [Pruebas y criterios de aceptación](#12-pruebas-y-criterios-de-aceptación)
-13. [Evidencias del funcionamiento](#13-evidencias-del-funcionamiento)
-14. [Limitaciones y mejoras futuras](#14-limitaciones-y-mejoras-futuras)
-15. [Autores y referencias](#15-autores-y-referencias)
+**Estado:** en desarrollo — interfaz de las tres vistas de Juan desarrollada; integración de IA y revisión conjunta pendientes.
 
-## 1. Descripción del proyecto
+## Contenido
 
-**[NOMBRE DEL PROYECTO]** es una aplicación web desarrollada con React orientada a **[DESCRIBIR PROBLEMA REAL, PÚBLICO OBJETIVO Y SOLUCIÓN]**. El sistema organiza la información del perfil, los proyectos o productos, las habilidades y la propuesta de valor, e incorpora una experiencia de conversación conectada con un modelo de inteligencia artificial.
+- [Objetivo y alcance](#objetivo-y-alcance)
+- [Tecnologías](#tecnologías)
+- [Instalación y ejecución](#instalación-y-ejecución)
+- [Arquitectura](#arquitectura)
+- [Módulos y funcionamiento](#módulos-y-funcionamiento)
+- [Diseño y navegación](#diseño-y-navegación)
+- [Inteligencia artificial](#inteligencia-artificial)
+- [Pruebas](#pruebas)
+- [Organización del desarrollo](#organización-del-desarrollo)
+- [Estado y próximos pasos](#estado-y-próximos-pasos)
 
-**Necesidad que resuelve:** [PROBLEMA CONCRETO].  
-**Usuarios principales:** [TIPO DE USUARIO].  
-**Resultado que ofrece:** [BENEFICIO Y VALOR DIFERENCIAL].
+## Objetivo y alcance
 
-> **Importante:** este párrafo resume el *alcance solicitado*. Adaptar la descripción final al funcionamiento real que demuestra el repositorio.
+Construir un portafolio web que centralice información profesional y facilite la consulta de proyectos, tecnologías, experiencia y canales de contacto. El proyecto aplica los fundamentos de JavaScript, React y desarrollo asistido por inteligencia artificial estudiados en la asignatura.
 
-## 2. Objetivos y alcance
+El alcance comprende cinco vistas, navegación sin recarga completa de página, componentes reutilizables, carga asíncrona de datos, validación de formularios y una futura conexión real con un modelo de IA. No se contempla autenticación, administración de usuarios ni almacenamiento remoto de contactos en la implementación actual.
 
-### Objetivo general
+## Tecnologías
 
-[REDACTAR EL OBJETIVO GENERAL DEL PROYECTO ESPECÍFICO, NO UNA FRASE GENÉRICA.]
-
-### Objetivos específicos
-
-- [OBJETIVO ESPECÍFICO 1].
-- [OBJETIVO ESPECÍFICO 2].
-- [OBJETIVO ESPECÍFICO 3].
-
-### Alcance funcional establecido en la actividad
-
-El docente solicita cinco vistas principales:
-
-1. Presentación y biografía.
-2. Listado de proyectos o productos.
-3. Stack tecnológico y estudios.
-4. Chat de conversación y formulario de contacto.
-5. Propuesta de valor.
-
-**Línea de desarrollo seleccionada:** [PORTAFOLIO INDIVIDUAL / ÁREA DE NEGOCIO ESCOGIDA].
-
-## 3. Tecnologías y herramientas utilizadas
-
-Completar esta tabla solamente con tecnologías efectivamente presentes en `package.json`, en el código o en el proceso de desarrollo.
-
-| Tecnología o herramienta | Uso concreto en el proyecto | Evidencia |
-| --- | --- | --- |
-| React | [COMPONENTES Y VISTAS IMPLEMENTADOS] | [RUTA DEL CÓDIGO] |
-| JavaScript | [FUNCIONES, EVENTOS Y MANEJO DE DATOS] | [RUTA DEL CÓDIGO] |
-| HTML / JSX | [ESTRUCTURA DE LA INTERFAZ] | [RUTA DEL CÓDIGO] |
-| CSS / [OTRA LIBRERÍA] | [ESTILOS Y DISEÑO RESPONSIVO] | [RUTA DEL CÓDIGO] |
-| [HERRAMIENTA DE IA 1] | [EN QUÉ SE UTILIZÓ] | [EVIDENCIA] |
-| [HERRAMIENTA DE IA 2] | [EN QUÉ SE UTILIZÓ] | [EVIDENCIA] |
-| [MODELO / SERVICIO DE IA] | [PROVEEDOR, MODELO E INTEGRACIÓN API] | [RUTA DE INTEGRACIÓN] |
-| [OTRAS DEPENDENCIAS REALES] | [USO] | [PACKAGE.JSON] |
-
-## 4. Arquitectura y organización del código
-
-La aplicación emplea una organización por **[VISTAS / COMPONENTES / SERVICIOS / CONTEXTOS, SEGÚN EL REPOSITORIO]**.
-
-| Elemento | Ubicación real | Responsabilidad |
-| --- | --- | --- |
-| Punto de entrada | `[RUTA]` | Inicializar la aplicación y montar React. |
-| Componente principal | `[RUTA]` | [RESPONSABILIDAD REAL]. |
-| Vista de inicio | `[RUTA]` | Presentación y biografía. |
-| Vista de proyectos | `[RUTA]` | Listado, filtros, paginación y detalle. |
-| Vista de stack | `[RUTA]` | Tecnologías, estudios y experiencias. |
-| Vista de chat/contacto | `[RUTA]` | Mensajería y formulario. |
-| Vista de propuesta de valor | `[RUTA]` | Contenido diferenciador de la propuesta. |
-| Componentes reutilizables | `[RUTA]` | [TARJETAS, BOTONES, SIDEBAR, ETC., SI EXISTEN]. |
-| Contexto global | `[RUTA / NO APLICA]` | [ESTADO COMPARTIDO CON `useContext`, SI EXISTE]. |
-| Servicio de IA | `[RUTA]` | Solicitudes y respuestas del modelo. |
-| Datos o fuente de proyectos | `[RUTA / FUENTE]` | [ARREGLO, JSON, API, ETC.]. |
-
-**Flujo de datos:** [DESCRIBIR CÓMO LAS VISTAS OBTIENEN DATOS, QUÉ COMPONENTES RECIBEN `props` Y DÓNDE SE GUARDA EL ESTADO].
-
-## 5. Módulos y funcionalidades
-
-Las siguientes subsecciones reproducen los criterios funcionales del proyecto final. Para la entrega definitiva, explicar **qué se hizo, cómo interactúa el usuario y en qué archivo está implementado**.
-
-### 5.1. Presentación y biografía
-
-**Propósito:** presentar el perfil y facilitar el acceso a las secciones de la aplicación.
-
-**Criterios solicitados:**
-
-- Banner o sección principal de presentación.
-- Header y barra de navegación (`navbar`) hacia las demás secciones.
-- Título, imagen representativa y descripción del perfil.
-- Biografía con **mínimo tres elementos**.
-- **Mínimo dos redes sociales** visibles.
-- Dos botones de llamada a la acción: **ver proyectos** y **contacto**.
-- Footer con información de resumen.
-
-**Funcionamiento implementado:** [EXPLICAR LA NAVEGACIÓN, LOS BOTONES Y LA INFORMACIÓN REAL QUE SE MUESTRA].  
-**Componentes involucrados:** `[NOMBRES / RUTAS REALES]`.
-
-### 5.2. Proyectos o productos
-
-**Propósito:** permitir explorar los elementos disponibles y consultar la información completa de uno seleccionado.
-
-**Criterios solicitados:**
-
-- Mostrar los **primeros 10 elementos** al cargar la vista.
-- Paginación funcional de **10 elementos por página**.
-- Cada elemento se presenta en una tarjeta con **cinco atributos obligatorios**.
-- Cada tarjeta incluye una acción **Ver detalle**.
-- El detalle se despliega en un **sidebar** y muestra los **ocho atributos** del elemento seleccionado.
-- Permitir filtros por **dos atributos diferentes**.
-- **Al menos uno de los filtros debe ser un selector**.
-- Incluir los botones **Filtrar** y **Limpiar filtros**.
-
-**Origen de los datos:** [ARREGLO LOCAL / JSON / API / OTRA FUENTE].  
-**Cinco atributos de la tarjeta:** [ATRIBUTO 1], [ATRIBUTO 2], [ATRIBUTO 3], [ATRIBUTO 4], [ATRIBUTO 5].  
-**Ocho atributos del detalle:** [ATRIBUTO 1], [ATRIBUTO 2], [ATRIBUTO 3], [ATRIBUTO 4], [ATRIBUTO 5], [ATRIBUTO 6], [ATRIBUTO 7], [ATRIBUTO 8].  
-**Primer filtro:** [ATRIBUTO Y TIPO DE CONTROL].  
-**Segundo filtro:** [ATRIBUTO Y TIPO DE CONTROL].
-
-**Funcionamiento implementado:** [EXPLICAR QUÉ OCURRE AL FILTRAR, CAMBIAR DE PÁGINA, LIMPIAR FILTROS, SELECCIONAR UN PROYECTO Y CERRAR EL SIDEBAR].  
-**Componentes involucrados:** `[NOMBRES / RUTAS REALES]`.
-
-> El enunciado no define los nombres específicos de los 5 y los 8 atributos. Deben tomarse del modelo de datos real del proyecto; no inventarlos.
-
-### 5.3. Stack tecnológico, estudios y experiencias
-
-**Propósito:** presentar las competencias técnicas, herramientas y trayectoria del perfil.
-
-**Criterios solicitados:**
-
-- Título de la página y descripción del stack utilizado.
-- **Mínimo tres tarjetas de tecnologías** con imágenes.
-- Presentar **mínimo dos herramientas de IA** utilizadas.
-- Timeline con **mínimo tres experiencias laborales**.
-- Incluir estudios y certificaciones cuando correspondan con la vista propuesta.
-
-**Tecnologías expuestas:** [LISTA REAL].  
-**Herramientas de IA expuestas:** [HERRAMIENTA 1], [HERRAMIENTA 2].  
-**Experiencias del timeline:** [EXPERIENCIA 1], [EXPERIENCIA 2], [EXPERIENCIA 3].  
-**Componentes involucrados:** `[NOMBRES / RUTAS REALES]`.
-
-### 5.4. Chat de conversación y formulario de contacto
-
-**Propósito:** permitir interacción con un modelo de IA y capturar solicitudes de contacto o nuevos proyectos.
-
-**Criterios solicitados para el chat:**
-
-- Conexión por **API con un modelo de inteligencia artificial**.
-- Componente para enviar mensajes y mostrar las respuestas.
-- Almacenamiento del **historial de conversación**.
-
-**Criterios solicitados para el formulario:**
-
-| Campo | Restricción indicada |
+| Tecnología | Uso |
 | --- | --- |
-| Nombre | Obligatorio; solo letras; máximo **20 caracteres**. |
-| Apellidos | Obligatorio; solo letras; máximo **20 caracteres**. |
-| Correo electrónico | Obligatorio; formato de email válido. |
-| Teléfono | Obligatorio; solo números. |
-| Descripción del proyecto | Obligatoria; campo de texto multilínea. |
+| React | Componentes funcionales, props, estados y efectos. |
+| Vite | Servidor de desarrollo y compilación. |
+| JavaScript (ES6+) | Funciones flecha, objetos, arreglos, eventos y promesas. |
+| JSX | Estructura de las interfaces. |
+| CSS | Diseño visual, Flexbox, Grid y adaptación a pantallas. |
+| JSON | Datos de tecnologías, herramientas de IA y experiencias. |
+| Fetch API | Lectura asíncrona de archivos JSON. |
+| Git y GitHub | Control de versiones y colaboración. |
+| npm | Gestión de dependencias y scripts. |
 
-El formulario también debe disponer de un botón para enviar la información y un mensaje de confirmación después del diligenciamiento válido.
+El boilerplate documentado utiliza React `^19.1.0` y Vite `^6.3.5`. Las versiones definitivas son las declaradas en `package.json` y `package-lock.json` del repositorio integrado.
 
-**Proveedor y modelo de IA:** [NOMBRE REAL].  
-**Funcionamiento del chat:** [DESCRIBIR ENVÍO, INDICADOR DE CARGA, RESPUESTA Y ERRORES].  
-**Almacenamiento del historial:** [ESTADO, LOCALSTORAGE, BASE DE DATOS U OTRO MECANISMO REAL].  
-**Destino de la información del formulario:** [EXPLICAR SI SE GUARDA, ENVÍA O SOLO SE CONFIRMA EN LA INTERFAZ].  
-**Componentes y servicio involucrados:** `[NOMBRES / RUTAS REALES]`.
+## Instalación y ejecución
 
-### 5.5. Propuesta de valor
+### Requisitos
 
-**Propósito:** mostrar el aporte diferencial de **[NOMBRE DEL PROYECTO]** para **[USUARIOS OBJETIVO]**.
+- Git.
+- Node.js compatible con la versión de Vite del proyecto (se recomienda Node.js 22 LTS).
+- npm.
 
-**Criterios solicitados:**
-
-- Título de la vista.
-- Sección principal con **carrusel informativo**.
-- **Segunda sección** de contenido libre relacionado con la propuesta de valor.
-- Footer.
-
-**Sección principal:** [EXPLICAR QUÉ INFORMA EL CARRUSEL Y CÓMO FUNCIONA].  
-**Sección secundaria:** [EXPLICAR EL BENEFICIO O CONTENIDO].  
-**Componentes involucrados:** `[NOMBRES / RUTAS REALES]`.
-
-## 6. Gestión de estado, eventos y asincronía
-
-El proyecto se evalúa por la aplicación práctica de conceptos de JavaScript y React. Documentar **ejemplos realmente implementados**, indicando su ruta en el repositorio.
-
-| Concepto solicitado | Uso concreto en este proyecto | Archivo o función |
-| --- | --- | --- |
-| Funciones de JavaScript | [FUNCIÓN Y RESULTADO] | `[RUTA]` |
-| Arreglos y objetos | [MODELO DE DATOS / LISTADO] | `[RUTA]` |
-| Eventos (`onClick`, `onChange`, `onSubmit`, etc.) | [ACCIÓN DEL USUARIO] | `[RUTA]` |
-| Promesas / procesos asíncronos | [LLAMADA A API O CARGA ASÍNCRONA] | `[RUTA]` |
-| Componentes React | [COMPONENTE REUTILIZABLE] | `[RUTA]` |
-| `props` | [DATOS QUE RECIBE UN COMPONENTE] | `[RUTA]` |
-| `useState` | [ESTADO DE FILTROS, PAGINACIÓN, FORMULARIO O CHAT] | `[RUTA]` |
-| `useEffect` | [CARGA INICIAL O SINCRONIZACIÓN] | `[RUTA]` |
-| `useContext` | [ESTADO COMPARTIDO ENTRE COMPONENTES] | `[RUTA]` |
-| Ciclo de vida y limpieza | [EFECTO, DESMONTAJE O LIMPIEZA REALES] | `[RUTA]` |
-
-**Ejemplo documentado de interacción:** [DESCRIBIR PASO A PASO UNA INTERACCIÓN REAL: EVENTO → ACTUALIZACIÓN DE ESTADO → CAMBIO EN LA INTERFAZ].
-
-> No afirmar que se usa un hook o una promesa si el código no lo demuestra. Si falta alguno de los conceptos evaluados, es una tarea de implementación, no de redacción.
-
-## 7. Integración con inteligencia artificial
-
-### 7.1. Propósito de la integración
-
-[EXPLICAR QUÉ NECESIDAD RESUELVE EL MODELO Y QUÉ TIPO DE RESPUESTAS PUEDE DAR.]
-
-### 7.2. Modelo, API y flujo de conversación
-
-- **Proveedor:** [PROVEEDOR REAL].
-- **Modelo:** [NOMBRE / VERSIÓN EFECTIVAMENTE CONFIGURADA].
-- **Método de conexión:** [SERVICIO / ENDPOINT / BACKEND, SIN EXPONER SECRETOS].
-- **Entrada:** [CÓMO SE FORMA LA CONSULTA].
-- **Salida:** [CÓMO SE PROCESA Y MUESTRA LA RESPUESTA].
-- **Historial:** [DÓNDE SE CONSERVA Y POR CUÁNTO TIEMPO].
-- **Errores y límites:** [COMPORTAMIENTO ANTE FALLOS DE RED, API O CUOTA].
-
-### 7.3. Prompt engineering
-
-[DESCRIBIR LAS INSTRUCCIONES O EL CONTEXTO QUE SE ENVÍA AL MODELO, POR QUÉ FUERON DISEÑADOS ASÍ Y CÓMO SE ORIENTA LA RESPUESTA. NO PUBLICAR DATOS PRIVADOS.]
-
-### 7.4. Optimización de tokens
-
-[INDICAR LAS MEDIDAS REALMENTE APLICADAS, COMO LIMITACIÓN DEL CONTEXTO O DEL HISTORIAL; SI NO EXISTEN, IDENTIFICARLAS COMO PENDIENTES.]
-
-### 7.5. Seguridad de credenciales
-
-No incluir tokens, claves API ni contraseñas en el README ni subir archivos `.env` privados al repositorio. [EXPLICAR CÓMO SE GESTIONAN LAS CREDENCIALES EN EL PROYECTO REAL; SI SE USA UNA API DE PAGO, VERIFICAR QUE LA CLAVE NO QUEDE EXPUESTA EN EL NAVEGADOR].
-
-## 8. Requisitos previos e instalación
-
-**Requisitos de ejecución:**
-
-- [VERSIÓN DE NODE.JS VERIFICADA CON EL PROYECTO].
-- [GESTOR DE PAQUETES Y VERSIÓN: npm, pnpm o yarn].
-- Conexión a Internet para los servicios externos que utilice la aplicación.
-- [CUENTA O CONFIGURACIÓN NECESARIA PARA LA API DE IA, SI APLICA].
-
-**Instalación — ajustar estos comandos al repositorio real:**
+### Desarrollo local
 
 ```bash
-git clone [URL_REAL_DEL_REPOSITORIO]
-cd [CARPETA_REAL_DEL_PROYECTO]
+git clone https://github.com/Guillermo18-cpu/Proyecto-final-react.git
+cd Proyecto-final-react
 npm install
-```
-
-Para inspeccionar los scripts disponibles en `package.json`:
-
-```bash
-npm run
-```
-
-## 9. Configuración y ejecución
-
-1. Configurar [VARIABLES DE ENTORNO NECESARIAS]. Documentar únicamente los **nombres** de las variables y un ejemplo sin secretos.
-2. Iniciar la aplicación con el **script existente** en `package.json`:
-
-```bash
-# Si el proyecto usa Vite y tiene el script "dev":
 npm run dev
-
-# Si utiliza otro sistema de ejecución, sustituir por su comando real.
 ```
 
-3. Abrir la URL indicada por la terminal: `[URL LOCAL REAL]`.
-4. Para generar una compilación de producción, usar `[COMANDO REAL, SI EXISTE]`.
-5. Para ejecutar pruebas automatizadas, usar `[COMANDO REAL, SI EXISTE]`.
+Abrir la URL indicada por Vite, normalmente `http://localhost:5173/`. Para consultar el avance de Juan antes de la integración, si la rama está publicada:
 
-**Configuración de la API:** [INDICAR SI SE NECESITA BACKEND, CÓMO INICIARLO Y CÓMO SE ESTABLECE LA URL DEL SERVICIO].
+```bash
+git switch guillermo
+npm install
+npm run dev
+```
 
-> **Nota:** no ejecutar comandos inventados. Los scripts y las versiones definitivas deben copiarse del proyecto real.
+### Scripts
 
-## 10. Guía de uso
-
-1. **Inicio:** acceder a la vista de presentación, revisar la biografía y utilizar la barra de navegación o los botones de acción.
-2. **Proyectos:** explorar los elementos, avanzar por las páginas, seleccionar atributos de filtrado y presionar **Filtrar**. Utilizar **Limpiar filtros** para restablecer el listado.
-3. **Detalle:** seleccionar **Ver detalle** en una tarjeta para consultar los ocho atributos en el sidebar.
-4. **Stack:** revisar las tecnologías, las herramientas de IA, los estudios y las experiencias laborales.
-5. **Chat:** escribir una consulta y enviar el mensaje; revisar la respuesta del modelo y el historial de la conversación.
-6. **Contacto:** completar los cinco campos obligatorios y enviar la información; comprobar que se muestre la confirmación correspondiente.
-7. **Propuesta de valor:** recorrer el carrusel y explorar las dos secciones principales.
-
-> Los pasos anteriores describen la **experiencia exigida por el docente**. Antes de entregar, comprobar que cada interacción realmente se pueda realizar y ajustar la guía a la interfaz final.
-
-## 11. Validaciones y manejo de errores
-
-**Formulario de contacto:** [DESCRIBIR MENSAJES DE ERROR, VALIDACIÓN DE CAMPOS Y RESPUESTA DE ENVÍO IMPLEMENTADOS].
-
-**Listado:** [EXPLICAR QUÉ OCURRE CUANDO NINGÚN ELEMENTO CUMPLE LOS FILTROS O UNA PÁGINA NO TIENE RESULTADOS].
-
-**Chat:** [EXPLICAR LA RESPUESTA ANTE ERRORES DE CONEXIÓN, RESPUESTAS VACÍAS O SERVICIO INDISPONIBLE].
-
-**Estados visuales:** [CARGA, VACÍO, ÉXITO Y ERROR, CUANDO EXISTAN].
-
-## 12. Pruebas y criterios de aceptación
-
-Marcar como **Verificado** solo después de ejecutar la aplicación y comprobar el resultado. Añadir evidencia o referencia de código en la última columna.
-
-| ID | Prueba funcional | Estado | Evidencia |
-| --- | --- | --- | --- |
-| PF-01 | El inicio contiene banner, navbar, biografía de 3 elementos, 2 redes, 2 CTA y footer. | Pendiente | [CAPTURA / RUTA] |
-| PF-02 | Al abrir proyectos se muestran 10 elementos en la primera página. | Pendiente | [CAPTURA / RUTA] |
-| PF-03 | La paginación muestra los siguientes elementos correctamente. | Pendiente | [CAPTURA / RUTA] |
-| PF-04 | Cada tarjeta presenta los cinco atributos definidos. | Pendiente | [CAPTURA / RUTA] |
-| PF-05 | El sidebar abre el proyecto seleccionado y muestra sus ocho atributos. | Pendiente | [CAPTURA / RUTA] |
-| PF-06 | Los dos filtros funcionan y uno es de tipo selector. | Pendiente | [CAPTURA / RUTA] |
-| PF-07 | **Filtrar** y **Limpiar filtros** producen el resultado esperado. | Pendiente | [CAPTURA / RUTA] |
-| PF-08 | Se muestran al menos 3 tarjetas de stack con imágenes. | Pendiente | [CAPTURA / RUTA] |
-| PF-09 | Se muestran 2 herramientas de IA y 3 experiencias en timeline. | Pendiente | [CAPTURA / RUTA] |
-| PF-10 | El chat envía un mensaje por API y recibe una respuesta del modelo. | Pendiente | [CAPTURA / RUTA] |
-| PF-11 | El historial de conversación se almacena según la solución definida. | Pendiente | [CAPTURA / RUTA] |
-| PF-12 | Nombre y apellidos admiten solo letras, con máximo 20 caracteres. | Pendiente | [CAPTURA / RUTA] |
-| PF-13 | El formulario rechaza email no válido, teléfono no numérico y campos vacíos. | Pendiente | [CAPTURA / RUTA] |
-| PF-14 | El formulario muestra un mensaje de confirmación cuando es válido. | Pendiente | [CAPTURA / RUTA] |
-| PF-15 | La propuesta de valor contiene un carrusel, otra sección y footer. | Pendiente | [CAPTURA / RUTA] |
-| PF-16 | La aplicación demuestra uso de props, eventos, estado, efectos y contexto. | Pendiente | [ARCHIVOS REALES] |
-| PF-17 | La aplicación demuestra promesas / asincronía e integración de IA. | Pendiente | [ARCHIVOS REALES] |
-| PF-18 | El README permite instalar, configurar, ejecutar y comprender cada módulo. | Pendiente | [VALIDACIÓN] |
-
-## 13. Evidencias del funcionamiento
-
-Incluir **capturas reales** del proyecto al terminar; no agregar enlaces a imágenes inexistentes.
-
-| Evidencia | Qué debe mostrar | Archivo o enlace real |
-| --- | --- | --- |
-| Inicio | Presentación y biografía | [RUTA / URL] |
-| Listado | Tarjetas y paginación | [RUTA / URL] |
-| Filtros | Resultado de aplicar y limpiar filtros | [RUTA / URL] |
-| Detalle | Sidebar con los 8 atributos | [RUTA / URL] |
-| Stack | Tecnologías, IA y timeline | [RUTA / URL] |
-| Chat | Solicitud, respuesta e historial | [RUTA / URL] |
-| Contacto | Validación y confirmación | [RUTA / URL] |
-| Valor | Carrusel y secciones | [RUTA / URL] |
-
-## 14. Limitaciones y mejoras futuras
-
-**Limitaciones actuales verificadas:** [ANOTAR SOLAMENTE LIMITACIONES REALES].
-
-**Mejoras futuras propuestas:** [IDEAS QUE NO SE DEBEN CONFUNDIR CON CARACTERÍSTICAS YA DESARROLLADAS].
-
-## 15. Autores y referencias
-
-**Integrantes y responsabilidades**
-
-| Integrante | Responsabilidad real |
+| Comando | Descripción |
 | --- | --- |
-| [NOMBRE 1] | [MÓDULOS / TAREAS] |
-| [NOMBRE 2, SI EXISTE] | [MÓDULOS / TAREAS] |
+| `npm run dev` | Inicia el servidor local. |
+| `npm run build` | Genera la compilación de producción en `dist/`. |
+| `npm run preview` | Previsualiza la compilación local. |
+| `npm run lint` | Ejecuta la revisión de ESLint. |
 
-**Material académico utilizado para definir el alcance:**
+La interfaz actual no necesita una API key para iniciar. La configuración de IA se documentará cuando se defina el mecanismo de integración en clase.
 
-- *Proyecto Final – React con AI 711-2026*: requisitos funcionales, condiciones, entregables y rúbrica.
-- *UseState in React-AI-2026-711* (Ing. Pablo Julián Salamanca): conceptos de componentes, props, eventos, estado y recordatorio del proyecto final.
+## Arquitectura
 
-**Licencia:** [LICENCIA REAL / INDICAR SI NO SE HA DEFINIDO].
+La aplicación separa las vistas, los componentes reutilizables, los recursos visuales y los datos. `App.jsx` administra la vista activa mediante `useState` y renderizado condicional; `Navbar` y `Footer` son componentes compartidos.
+
+### Estructura del avance de Juan
+
+```text
+Proyecto-final-react/
+├── public/
+│   ├── datos/
+│   │   ├── tecnologias.json
+│   │   ├── herramientasIA.json
+│   │   └── experiencias.json
+│   └── imagenes/
+│       ├── react.svg
+│       ├── javascript.svg
+│       └── sql.svg
+├── src/
+│   ├── assets/
+│   │   └── perfil.jpg
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Banner.jsx
+│   │   ├── Biografia.jsx
+│   │   ├── TarjetaBiografia.jsx
+│   │   ├── RedesSociales.jsx
+│   │   ├── Footer.jsx
+│   │   ├── TarjetaTecnologia.jsx
+│   │   ├── HerramientasIA.jsx
+│   │   ├── Timeline.jsx
+│   │   ├── ChatIA.jsx
+│   │   └── FormularioContacto.jsx
+│   ├── views/
+│   │   ├── Presentacion.jsx
+│   │   ├── StackTecnologico.jsx
+│   │   └── Contacto.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── package.json
+└── README.md
+```
+
+La estructura de proyectos y propuesta de valor se incorporará después de revisar la rama de Samuel; no se asignan nombres de archivos no confirmados.
+
+### Diagrama de componentes
+
+```mermaid
+flowchart TD
+    M[main.jsx] --> A[App.jsx]
+    A --> N[Navbar]
+    A --> V{vistaActual}
+    A --> F[Footer]
+    V --> P[Presentacion]
+    V --> S[StackTecnologico]
+    V --> C[Contacto]
+    V -. Integracion .-> PR[Proyectos]
+    V -. Integracion .-> PV[Propuesta de valor]
+    P --> B[Banner]
+    P --> BIO[Biografia]
+    BIO --> TB[TarjetaBiografia]
+    P --> R[RedesSociales]
+    S --> TT[TarjetaTecnologia]
+    S --> H[HerramientasIA]
+    S --> T[Timeline]
+    C --> CH[ChatIA]
+    C --> FC[FormularioContacto]
+```
+
+## Módulos y funcionamiento
+
+### 1. Presentación y biografía
+
+Punto de entrada del portafolio. Incluye banner con imagen y descripción del perfil, biografía con tres elementos, dos enlaces sociales, navbar y footer. Los botones **Ver proyectos** y **Contáctame** cambian la vista mediante la función recibida por props.
+
+| Componente | Responsabilidad |
+| --- | --- |
+| `Presentacion` | Agrupa las secciones de inicio. |
+| `Banner` | Presentación, fotografía y llamadas a la acción. |
+| `Biografia` | Define el arreglo de información biográfica. |
+| `TarjetaBiografia` | Renderiza cada elemento mediante props. |
+| `RedesSociales` | Genera enlaces externos a partir de un arreglo. |
+| `Navbar` / `Footer` | Navegación y resumen compartidos. |
+
+Pendiente: confirmar el enlace personal de LinkedIn y el contenido definitivo del perfil.
+
+### 2. Proyectos
+
+Módulo a cargo de Samuel. Su alcance funcional se define según el enunciado:
+
+- Mostrar inicialmente diez proyectos y permitir navegar entre páginas de diez elementos.
+- Representar cada proyecto en una tarjeta con cinco atributos obligatorios.
+- Abrir un sidebar con los ocho atributos del proyecto seleccionado.
+- Filtrar por dos atributos; uno mediante selector y el otro de libre elección.
+- Incorporar acciones de Filtrar y Limpiar filtros.
+
+Flujo previsto: cargar proyectos → aplicar filtros → paginar resultados → seleccionar proyecto → visualizar detalle. Los nombres de atributos, componentes y estado real se confirmarán al integrar la rama correspondiente.
+
+### 3. Stack tecnológico y estudios
+
+Presenta tecnologías con imágenes y descripciones, herramientas de IA y tres experiencias laborales en una línea de tiempo.
+
+`StackTecnologico` carga los tres archivos JSON mediante `fetch` dentro de `useEffect`. Una función `cargarDatos` comprueba la respuesta HTTP y la convierte a datos JavaScript. `Promise.all` reúne las tres peticiones; los resultados se almacenan con `useState` y se distribuyen mediante props. Durante la carga se muestra un aviso; si falla una petición se muestra un error general.
+
+```mermaid
+flowchart LR
+    A[useEffect] --> B[fetch de los tres JSON]
+    B --> C[Promise.all]
+    C --> D{Resultado}
+    D -->|Exito| E[Actualizar estados]
+    E --> F[Renderizar tarjetas y timeline]
+    D -->|Error| G[Mostrar mensaje de error]
+```
+
+| Archivo | Propiedades de cada objeto |
+| --- | --- |
+| `tecnologias.json` | `id`, `nombre`, `categoria`, `descripcion`, `imagen` |
+| `herramientasIA.json` | `id`, `nombre`, `descripcion`, `enlace` |
+| `experiencias.json` | `id`, `empresa`, `cargo`, `periodo`, `descripcion` |
+
+El contenido inicial incluye React, JavaScript y SQL, y las herramientas ChatGPT y GitHub Copilot. Las experiencias laborales son datos provisionales que deben sustituirse por información real antes de entregar.
+
+### 4. Chat de conversación y formulario de contacto
+
+`Contacto.jsx` reúne dos componentes independientes en una sola vista.
+
+#### Formulario de contacto
+
+`FormularioContacto` administra los campos mediante un objeto de estado, captura los cambios con `onChange` y valida los datos al ejecutar `onSubmit`. Se utilizan expresiones regulares, `trim()` y mensajes de error por campo.
+
+| Campo | Regla |
+| --- | --- |
+| Nombre | Obligatorio, letras (incluidas tildes y ñ) y espacios, máximo 20 caracteres. |
+| Apellidos | Misma regla que nombre. |
+| Correo | Obligatorio, formato básico de correo válido. |
+| Teléfono | Obligatorio, únicamente dígitos. |
+| Descripción | Obligatoria, no admite solo espacios. |
+
+Si todos los datos son válidos, se muestra una confirmación local y se limpian los campos. No se envían correos ni se persisten los datos. Actualmente los caracteres inválidos se rechazan al validar el envío, no necesariamente al escribir; debe verificarse si el docente exige impedir su ingreso desde el teclado.
+
+#### Chat de conversación
+
+`ChatIA` mantiene un arreglo de mensajes en `useState`. Cada mensaje contiene `id`, `rol` y `contenido`. El componente muestra un saludo inicial, permite escribir y agregar mensajes del usuario, rechaza mensajes vacíos y permite limpiar la conversación. La interfaz distingue visualmente los roles.
+
+El historial actual permanece mientras el componente está montado; se pierde al salir de la vista o recargar. No hay respuestas generadas por un modelo todavía. La conexión real y la gestión compartida del historial quedan pendientes de la explicación del docente.
+
+### 5. Propuesta de valor
+
+Módulo a cargo de Samuel. El diseño previsto incluye una sección principal con carrusel, una segunda sección de contenido profesional y el footer compartido. El contenido y funcionamiento definitivo se documentarán tras revisar su implementación.
+
+## Diseño y navegación
+
+La línea visual utiliza azul primario (`#2563eb`), azul oscuro (`#0f172a`), fondo claro (`#f8fafc`) y blanco (`#ffffff`). Se emplean tarjetas con bordes suaves, tipografía del sistema y una distribución adaptable mediante CSS Grid, Flexbox y media queries de 768 px.
+
+| Opción del navbar | Estado de navegación |
+| --- | --- |
+| Inicio | `inicio` |
+| Proyectos | `proyectos` |
+| Stack tecnológico | `stack` |
+| Propuesta de valor | `propuesta` |
+| Contacto | `contacto` |
+
+El estado `vistaActual` permite cambiar el contenido principal sin recargar el documento. No se utiliza React Router en el avance descrito. Los botones del banner emplean la misma función de navegación.
+
+## Inteligencia artificial
+
+### Integración prevista
+
+La selección del proveedor, modelo, configuración y mecanismo de conexión se realizará según la explicación del docente. El flujo previsto es:
+
+```mermaid
+sequenceDiagram
+    actor U as Usuario
+    participant C as Chat React
+    participant I as Integracion segura prevista
+    participant M as Modelo IA
+    U->>C: Escribir mensaje
+    C->>I: Mensaje y contexto limitado
+    I->>M: Solicitud al modelo
+    M-->>I: Respuesta
+    I-->>C: Respuesta o error
+    C-->>U: Actualizar conversacion
+```
+
+Este diagrama representa el diseño objetivo, no una conexión ya operativa.
+
+### Prompt engineering
+
+Propuesta inicial de instrucciones RTCF, pendiente de ajuste al modelo seleccionado:
+
+```text
+Rol: asistente virtual del portafolio profesional.
+Contexto: utiliza únicamente los datos verificados del perfil y sus proyectos.
+Tarea: responde preguntas sobre habilidades, experiencia, proyectos y contacto.
+Restricciones: no inventes información; no solicites datos sensibles;
+si no conoces una respuesta, indícalo y orienta al formulario de contacto.
+Formato: respuesta breve, clara y en español.
+```
+
+### Optimización de tokens y seguridad
+
+- Enviar únicamente contexto relevante y limitar la longitud de entrada y salida.
+- Limitar o resumir el historial enviado al modelo sin eliminar necesariamente el historial visible.
+- Evitar solicitudes vacías y gestionar carga, errores y respuestas del proveedor.
+- No incluir claves privadas en el código del navegador, archivos públicos ni commits. Las variables `VITE_*` se exponen al cliente y no son adecuadas para secretos.
+- Definir una integración segura según las instrucciones del docente y documentar las variables necesarias sin publicar sus valores.
+
+`useContext` está previsto para gestionar estado compartido si corresponde al diseño explicado en clase. Todavía no se encuentra implementado en el avance descrito.
+
+## Pruebas
+
+La siguiente matriz define comprobaciones manuales de aceptación. No constituye un reporte de pruebas automatizadas ni una certificación de ejecución completa.
+
+| Caso | Resultado esperado | Estado |
+| --- | --- | --- |
+| Navegar desde Inicio a Stack | Se muestra la vista seleccionada | Observado en captura |
+| Cargar tecnologías | Tres tarjetas con imágenes y descripción | Observado en captura |
+| CTA y enlaces sociales | Navegación y perfiles correctos | Verificar enlaces finales |
+| Cargar herramientas y timeline | Dos herramientas y tres experiencias | Verificar y personalizar |
+| JSON inexistente o inválido | Mensaje de error sin bloquear toda la aplicación | Por probar |
+| Formulario vacío | Errores de campos obligatorios | Por probar |
+| Nombre con números o teléfono con letras | Rechazo del envío | Por probar |
+| Correo incorrecto | Mensaje de validación | Por probar |
+| Formulario válido | Confirmación local y limpieza | Por probar |
+| Chat con mensaje vacío | No se agrega al historial | Por probar |
+| Chat con varios mensajes | Se conservan mientras la vista está montada | Por probar |
+| Limpiar chat | Regresa al saludo inicial | Por probar |
+| Pantalla móvil | Distribución en una columna sin desbordamiento | Por probar |
+| Proyectos: filtros, paginación y detalle | Cumple condiciones del módulo | Pendiente de integración |
+| Propuesta de valor | Carrusel, segunda sección y footer | Pendiente de integración |
+| API de IA | Respuesta real, historial y manejo de errores | Pendiente de implementación |
+| Compilación y lint | Comandos terminan sin errores | Por ejecutar en versión integrada |
+
+## Organización del desarrollo
+
+| Integrante | Responsabilidad acordada |
+| --- | --- |
+| Juan Guillermo Sánchez | Presentación y biografía, stack tecnológico y estudios, chat y formulario de contacto, README. |
+| Samuel Beltrán Dávila | Listado de proyectos, filtros, paginación, detalle y propuesta de valor. |
+| Ambos | Integración, revisión, pruebas, diapositivas y sustentación. |
+
+Ramas de trabajo: `guillermo` y `feature/samuel-estudiante2`. La integración en `main` debe coordinarse entre los integrantes para evitar sobrescribir cambios.
+
+Flujo recomendado: revisar requisitos → definir componentes y datos → implementar por módulos → verificar → documentar cambios → integrar. Este README consolida el diseño y el avance existente; no pretende acreditar que todas las decisiones se documentaron antes de programar.
+
+## Estado y próximos pasos
+
+- [x] Estructura base React + Vite.
+- [x] Implementación inicial de presentación y biografía.
+- [x] Implementación inicial de stack tecnológico y estudios.
+- [x] Formulario con validaciones y confirmación local.
+- [x] Interfaz de chat e historial temporal.
+- [ ] Personalizar experiencias y comprobar enlaces sociales.
+- [ ] Revisar e integrar proyectos y propuesta de valor de Samuel.
+- [ ] Implementar conexión real con IA y `useContext` según clase.
+- [ ] Completar pruebas, corregir errores y actualizar documentación de ejecución de IA.
+- [ ] Preparar diapositivas y demo de sustentación.
+
+## Referencias
+
+- Enunciado oficial: *Proyecto Final — Desarrollo de Apps asistido con IA*, grupo 711, secciones 2, 4, 5 y 6.
+- [Documentación de React](https://react.dev/)
+- [Documentación de Vite](https://vite.dev/)
+- [MDN Web Docs](https://developer.mozilla.org/es/)
+
+El desarrollo se apoya en herramientas de IA para orientación, explicación y revisión de código. Los integrantes son responsables de comprender, comprobar y sustentar la implementación entregada.

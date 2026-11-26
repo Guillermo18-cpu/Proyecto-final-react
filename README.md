@@ -6,7 +6,7 @@ Aplicación web académica para presentar un perfil profesional, consultar proye
 
 **Autores:** Juan Guillermo Sánchez y Samuel Beltrán Dávila.
 
-**Estado:** en desarrollo — interfaz de las tres vistas de Juan desarrollada; integración de IA y revisión conjunta pendientes.
+**Estado:** en desarrollo — avance local de las tres vistas de Juan; publicación y verificación de los cambios en `guillermo`, integración de IA y revisión conjunta pendientes.
 
 ## Contenido
 
@@ -83,7 +83,9 @@ La interfaz actual no necesita una API key para iniciar. La configuración de IA
 
 La aplicación separa las vistas, los componentes reutilizables, los recursos visuales y los datos. `App.jsx` administra la vista activa mediante `useState` y renderizado condicional; `Navbar` y `Footer` son componentes compartidos.
 
-### Estructura del avance de Juan
+### Estructura del avance local de Juan
+
+El siguiente árbol describe los archivos desarrollados localmente. Su disponibilidad en GitHub debe comprobarse después de publicar los cambios en `guillermo`.
 
 ```text
 Proyecto-final-react/
@@ -231,7 +233,22 @@ Módulo a cargo de Samuel. El diseño previsto incluye una sección principal co
 
 ## Diseño y navegación
 
-La línea visual utiliza azul primario (`#2563eb`), azul oscuro (`#0f172a`), fondo claro (`#f8fafc`) y blanco (`#ffffff`). Se emplean tarjetas con bordes suaves, tipografía del sistema y una distribución adaptable mediante CSS Grid, Flexbox y media queries de 768 px.
+La identidad visual aprobada es **neobrutalista**, con colores planos, contraste alto, bordes negros gruesos de 3 px y sombras duras sin difuminado.
+
+| Color | Código | Uso previsto |
+| --- | --- | --- |
+| Crema | `#FFF8E7` | Fondo principal. |
+| Amarillo | `#FFD23F` | Navegación activa y elementos destacados. |
+| Rosa | `#FF6B9D` | Botones principales y tarjetas. |
+| Celeste | `#4CC9F0` | Tarjetas y encabezado del chat. |
+| Azul | `#2563EB` | Footer y enlaces destacados. |
+| Negro | `#111` | Bordes, sombras y texto. |
+
+Tipografías aprobadas: **Archivo Black** para títulos, **Inter** para texto y **Space Mono** para etiquetas. La distribución utiliza CSS Grid, Flexbox y media queries de 768 px.
+
+La maquetación de las cinco vistas está en [docs/maquetacion.md](docs/maquetacion.md), disponible en la rama [main](https://github.com/Guillermo18-cpu/Proyecto-final-react/blob/main/docs/maquetacion.md) según la revisión del equipo.
+
+La adaptación inicial del CSS ya incorpora bordes, sombras y colores neobrutalistas. Queda pendiente igualar los códigos de color y las fuentes a la especificación aprobada, ajustar los componentes JSX y verificar la fidelidad de las cinco vistas.
 
 | Opción del navbar | Estado de navegación |
 | --- | --- |
@@ -320,7 +337,7 @@ La siguiente matriz define comprobaciones manuales de aceptación. No constituye
 | Samuel Beltrán Dávila | Listado de proyectos, filtros, paginación, detalle y propuesta de valor. |
 | Ambos | Integración, revisión, pruebas, diapositivas y sustentación. |
 
-Ramas de trabajo: `guillermo` y `feature/samuel-estudiante2`. La integración en `main` debe coordinarse entre los integrantes para evitar sobrescribir cambios.
+Ramas de trabajo: `guillermo` y `samuel`. La integración en `main` debe coordinarse entre los integrantes para evitar sobrescribir cambios.
 
 Flujo recomendado: revisar requisitos → definir componentes y datos → implementar por módulos → verificar → documentar cambios → integrar. Este README consolida el diseño y el avance existente; no pretende acreditar que todas las decisiones se documentaron antes de programar.
 
@@ -331,6 +348,8 @@ Flujo recomendado: revisar requisitos → definir componentes y datos → implem
 - [x] Implementación inicial de stack tecnológico y estudios.
 - [x] Formulario con validaciones y confirmación local.
 - [x] Interfaz de chat e historial temporal.
+- [ ] Publicar y verificar las tres vistas y los JSON en `guillermo`.
+- [ ] Ajustar colores, tipografías y estructura JSX a la maquetación aprobada.
 - [ ] Personalizar experiencias y comprobar enlaces sociales.
 - [ ] Revisar e integrar proyectos y propuesta de valor de Samuel.
 - [ ] Implementar conexión real con IA y `useContext` según clase.

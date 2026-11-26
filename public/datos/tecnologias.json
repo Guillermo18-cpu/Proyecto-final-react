@@ -1,0 +1,24 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "React",
+    "categoria": "Frontend",
+    "descripcion": "Desarrollo de interfaces web mediante componentes reutilizables.",
+    "imagen": "/imagenes/react-original.svg"
+  },
+  {
+    "id": 2,
+    "nombre": "JavaScript",
+    "categoria": "Programación",
+    "descripcion": "Desarrollo de funcionalidades e interactividad en aplicaciones web.",
+    "imagen": "/imagenes/javascript-original.svg"
+  },
+  {
+    "id": 3,
+    "nombre": "SQL",
+    "categoria": "Bases de datos",
+    "descripcion": "Gestión, consulta y almacenamiento de información en bases de datos relacionales.",
+    "imagen": "/imagenes/microsoftsqlserver-original.svg"
+  }
+]

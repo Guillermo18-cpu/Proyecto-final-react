@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Presentacion from './views/Presentacion'
+import StackTecnologico from './views/StackTecnologico'
+import Contacto from './views/Contacto'
 
 const App = () => {
   const [vistaActual, setVistaActual] = useState('inicio')
@@ -24,7 +26,7 @@ const App = () => {
         )}
 
         {vistaActual === 'stack' && (
-          <h1>Stack tecnológico y estudios</h1>
+          <StackTecnologico />
         )}
 
         {vistaActual === 'propuesta' && (
@@ -32,7 +34,7 @@ const App = () => {
         )}
 
         {vistaActual === 'contacto' && (
-          <h1>Chat y formulario de contacto</h1>
+          <Contacto />
         )}
       </main>
 

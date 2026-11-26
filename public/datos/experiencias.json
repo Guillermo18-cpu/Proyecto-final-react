@@ -1,0 +1,24 @@
+
+[
+  {
+    "id": 1,
+    "empresa": "Nombre de la empresa",
+    "cargo": "Cargo desempeñado",
+    "periodo": "2025 - 2026",
+    "descripcion": "Descripción de las funciones y responsabilidades realizadas."
+  },
+  {
+    "id": 2,
+    "empresa": "Nombre de la empresa",
+    "cargo": "Cargo desempeñado",
+    "periodo": "2024 - 2025",
+    "descripcion": "Descripción de las funciones y responsabilidades realizadas."
+  },
+  {
+    "id": 3,
+    "empresa": "Nombre de la empresa",
+    "cargo": "Cargo desempeñado",
+    "periodo": "2023 - 2024",
+    "descripcion": "Descripción de las funciones y responsabilidades realizadas."
+  }
+]

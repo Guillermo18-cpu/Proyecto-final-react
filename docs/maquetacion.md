@@ -1,6 +1,6 @@
 # Maquetación — Portafolio (Proyecto final React)
 
-Wireframes de las 5 vistas, basados en las secciones 4 y 5 de `Proyecto.pdf` y en lo indicado por el profesor en clase. Muestran la ubicación de cada sección; no son el diseño final.
+Maquetación de las 5 vistas, basada en las secciones 4 y 5 de `Proyecto.pdf` y en lo indicado por el profesor en clase. Cada vista tiene su imagen con la línea de diseño (estilo neobrutalista) y un esquema con la ubicación de cada sección.
 
 **Reparto (diagrama del PDF):**
 
@@ -10,6 +10,8 @@ Wireframes de las 5 vistas, basados en las secciones 4 y 5 de `Proyecto.pdf` y e
 ---
 
 ## 1. Presentación y Biografía — Juan
+
+![Maquetación — Presentación y Biografía](maquetacion/1-presentacion.png)
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -27,7 +29,7 @@ Wireframes de las 5 vistas, basados en las secciones 4 y 5 de `Proyecto.pdf` y e
 ├──────────────────────────────────────────────────────────────┤
 │ REDES SOCIALES (mín. 2):  (GitHub)  (LinkedIn)                │
 ├──────────────────────────────────────────────────────────────┤
-│ FOOTER: resumen · enlaces · © año                             │
+│ FOOTER: ¿Trabajamos juntos? · resumen · info académica · ©    │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -36,6 +38,8 @@ Wireframes de las 5 vistas, basados en las secciones 4 y 5 de `Proyecto.pdf` y e
 ---
 
 ## 2. Proyectos y detalle — Samuel
+
+![Maquetación — Proyectos y detalle](maquetacion/2-proyectos.png)
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -79,6 +83,8 @@ Wireframes de las 5 vistas, basados en las secciones 4 y 5 de `Proyecto.pdf` y e
 
 ## 3. Stack tecnológico y estudios — Juan
 
+![Maquetación — Stack tecnológico y estudios](maquetacion/3-stack.png)
+
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │ HEADER + NAVBAR                                               │
@@ -111,6 +117,8 @@ Wireframes de las 5 vistas, basados en las secciones 4 y 5 de `Proyecto.pdf` y e
 
 ## 4. Chat con IA y contacto — Juan
 
+![Maquetación — Chat con IA y contacto](maquetacion/4-chat-contacto.png)
+
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │ HEADER + NAVBAR                                               │
@@ -141,6 +149,8 @@ Wireframes de las 5 vistas, basados en las secciones 4 y 5 de `Proyecto.pdf` y e
 ---
 
 ## 5. Propuesta de valor — Samuel
+
+![Maquetación — Propuesta de valor](maquetacion/5-propuesta-valor.png)
 
 ```
 ┌──────────────────────────────────────────────────────────────┐

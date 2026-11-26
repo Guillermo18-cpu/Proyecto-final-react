@@ -1,0 +1,15 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "ChatGPT",
+    "descripcion": "Herramienta de inteligencia artificial utilizada como apoyo en el aprendizaje, análisis y desarrollo de código.",
+    "enlace": "https://chatgpt.com/"
+  },
+  {
+    "id": 2,
+    "nombre": "GitHub Copilot",
+    "descripcion": "Asistente de programación que proporciona sugerencias de código y facilita el desarrollo de software.",
+    "enlace": "https://github.com/features/copilot"
+  }
+]
